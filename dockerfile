@@ -27,8 +27,8 @@ RUN rm -rf /pgpool-II-3.4.0 & rm /pgpool-II-3.4.0.tar.gz
 EXPOSE 9999
 
 # Add conf files
-ADD pgpool2/pcp.conf /etc/pgpool2/pcp.conf
-ADD pgpool2/pgpool.conf /etc/pgpool2/pgpool.conf
-ADD pgpool2/pool_hba.conf /etc/pgpool2/pool_hba.conf
+ADD pgpool2/pcp.conf /usr/local/etc/pcp.conf
+ADD pgpool2/pgpool.conf /usr/local/etc/pgpool.conf
+ADD pgpool2/pool_hba.conf /usr/local/etc/pool_hba.conf
 
 CMD [pgpool]
