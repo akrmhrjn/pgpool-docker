@@ -31,4 +31,4 @@ ADD pgpool2/pcp.conf /usr/local/etc/pcp.conf
 ADD pgpool2/pgpool.conf /usr/local/etc/pgpool.conf
 ADD pgpool2/pool_hba.conf /usr/local/etc/pool_hba.conf
 
-CMD [pgpool]
+ENTRYPOINT ["/usr/local/bin/pgpool","-n"]
