@@ -33,7 +33,6 @@ ADD pgpool2/pool_hba.conf /usr/local/etc/pool_hba.conf
 
 #set up configuration files and run pgpool
 ADD start.sh /tmp/start.sh
-RUN chmod 777 /tmp/start.sh 
-RUN echo done
+RUN chmod 777 /tmp/start.sh
 
 ENTRYPOINT ["/tmp/start.sh"]
