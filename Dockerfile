@@ -23,7 +23,7 @@ RUN ldconfig
 # clean up
 RUN rm -rf /pgpool-II-3.4.0 & rm /pgpool-II-3.4.0.tar.gz
 
-# pgpool
+# expose pgpool port
 EXPOSE 9999
 
 # Add conf files
@@ -34,5 +34,4 @@ ADD pgpool2/pool_hba.conf /usr/local/etc/pool_hba.conf
 # Set up configuration files and run pgpool
 ADD start.sh /tmp/start.sh
 RUN chmod 777 /tmp/start.sh
-
 ENTRYPOINT ["/tmp/start.sh"]
