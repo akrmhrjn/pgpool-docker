@@ -20,10 +20,10 @@ RUN make install
 
 RUN ldconfig
 
-# clean up
+# Clean up
 RUN rm -rf /pgpool-II-3.4.0 & rm /pgpool-II-3.4.0.tar.gz
 
-# expose pgpool port
+# Expose pgpool port
 EXPOSE 9999
 
 # Add template of configuartion files
