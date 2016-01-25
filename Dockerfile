@@ -3,7 +3,7 @@ FROM postgres:9.4
 RUN apt-get update
 RUN apt-get install -y postgresql-server-dev-9.4 apache2 libapache2-mod-php5 curl build-essential
 
-# Download pgpool
+# Download pgpool2
 RUN curl -L -o pgpool-II-3.4.0.tar.gz http://www.pgpool.net/download.php?f=pgpool-II-3.4.0.tar.gz 
 RUN tar zxvf pgpool-II-3.4.0.tar.gz
 
